@@ -143,11 +143,16 @@
     width: 90%;
     height: auto;
     display: grid;
-    margin: 50px;
+    margin: 50px auto;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:auto;
     /* border: 1px solid red; */
     column-gap:30px;
+}
+
+#relatedVdo img{
+    height: 200px;
+    /* border: 1px solid red; */
 }
 
 
