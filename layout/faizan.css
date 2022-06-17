@@ -10,9 +10,12 @@ a{
 body{
     font-family: 'Source Sans Pro', sans-serif;
 }
+/* .paddtop{
+    padding-top:10px;  
+} */
 .container{
     width: 100%;
-    margin-top:70px;
+    margin-top:100px;
     padding: 1% 5%;
 }
 .serif{
@@ -22,14 +25,18 @@ body{
 .fs{
     font-size: 12px;
     font-weight: 400;
-   
 }
 .fs17{
     font-size: 17px;
     font-weight: 600;
     line-height: 21px;
-    color: #333333
-    ;
+    color: #333333;
+}
+.fs18{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #333333;
 }
 .fsc{
     font-size:17px;
@@ -49,6 +56,18 @@ body{
     line-height: 34px;
     color: #ffffff;
 }
+.fs14{
+    font-size:14px;
+    font-weight: 400px;
+    color: #333333;
+    line-height: 18px;
+}
+.fs36{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000000;
+}
 .green{
     background-color: #68A923;
 }
@@ -60,6 +79,14 @@ body{
     font-weight: 400px;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
+}
+.gbox{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+
 }
 .date{
     font-size: 12px;
@@ -77,7 +104,7 @@ hr{
     height: 7px;
     font-size: 100px;
     border: none;
-    margin: 20px 10px 2px 0px;
+    margin: 20px 10px 5px 0px;
 }
 .padd{
     padding:15px 20px;
@@ -115,7 +142,7 @@ img{
 .seminav{
     width: 100%;
     height: 60px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(201, 197, 197);
     display: flex;
     position: relative;
    
@@ -204,6 +231,9 @@ img{
     width: 25%;
     margin-right:10px;
 }
+.marginbot{
+margin-bottom: 20px;
+}
 #crd3{
     display: flex;
     flex-direction: column;
@@ -212,8 +242,10 @@ img{
 .imgw>img{
     width: 80%;
 }
+.imgx>img{
+    width: 50%;
+}
 section{
-    
     width: 100%;
     padding-bottom: 25px;
     padding-top: 25px;
@@ -231,6 +263,11 @@ section{
     gap: 40px;
 }
 #life{
+    width:100%;
+    padding:1% 5%;
+    background-color: #EFF6F4;
+}
+#kar{
     width:100%;
     padding:1% 5%;
     background-color: #EFF6F4;
@@ -300,7 +337,11 @@ section{
     .seminavbody{
        width: 80%;
     }
+    .gbox{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto;
     
+    }
 }
 
 @media all and (max-width:768px){
@@ -371,6 +412,11 @@ section{
         "a"
         "b"
         "c"
+    }
+    .gbox{
+        grid-template-columns: auto;
+        grid-template-rows:repeat(3,auto);
+    
     }
     .flc{
         flex-direction: column;
