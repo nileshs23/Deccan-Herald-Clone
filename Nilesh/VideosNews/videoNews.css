@@ -11,7 +11,7 @@
 }
 
 #heading{
-    width: 100%;
+    width: 95%;
     height: 100px;
     /* border: 1px solid red; */
     display: flex;
@@ -35,11 +35,17 @@
 }
 #datetime{
     width:70%;
-    height: auto;
+    height:auto;
     display: flex;
     margin-top: 15px;
     align-items: center;
     justify-content: flex-start;
+    /* border: 1px solid red; */
+}
+
+#datetime>img{
+    width:5%;
+    margin-right: 10px;
     /* border: 1px solid red; */
 }
 
@@ -74,11 +80,16 @@
 
 #video_content>div{
     width: 100%;
-    height: auto;
+    height:auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 20px auto;
+    /* border: 1px solid red; */
+}
+
+#video_content>div>img{
+    width:100px;
     /* border: 1px solid red; */
 }
 
@@ -110,6 +121,12 @@
     /* border: 1px solid red; */
 }
 
+#detailednews>div>div>img{
+    width:100px;
+    height: 100px;
+    /* border: 1px solid red; */
+}
+
 #relatedVideos{
     width:auto;
     height: auto;
@@ -122,14 +139,17 @@
 }
 
 
-#vdo{
+#relatedVdo{
     width: 90%;
+    height: auto;
     display: grid;
     margin: 50px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:auto;
-    /* background-color: red; */
+    /* border: 1px solid red; */
+    column-gap:30px;
 }
+
 
 #bar{
     margin-left: 50px;
