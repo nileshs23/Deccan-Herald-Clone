@@ -50,10 +50,10 @@ body{
     color: #ffffff;
 }
 .green{
-    background-color: #68A923;
+    background-color: #432957 ;
 }
 .cgreen{
-    color:#68A923 ;
+    color:#432957  ;
 }
 .dategreen{
     font-size: 12px;
@@ -72,7 +72,7 @@ body{
    justify-content: space-between;
 }
 hr{
-    background-color: rgb(104, 169, 35);
+    background-color: #432957;
     width:25px;
     height: 7px;
     font-size: 100px;
@@ -122,7 +122,7 @@ img{
 }
 .highlight{
     
-    background-color: rgb(104, 169, 35);
+    background-color: #432957;
     padding: 10px 50px 10px 20px;
     display: flex;
     align-items: center;
@@ -151,6 +151,17 @@ img{
     font-size: 18px;
     margin-bottom:10px;
 }
+#newMetrolife{
+    background-color: #a189b4;
+}
+#onlyforthis{
+    /* background-color: red; */
+    margin: 50px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
 
 .cardcont{
  width: 100%;
@@ -192,6 +203,7 @@ img{
 }
 .flc{
     display: flex;
+
 }
 .flwidth{
     width: 30%;

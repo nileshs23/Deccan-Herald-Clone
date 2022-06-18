@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="left">
+        <div id="logo">
+          <img
+            src="https://d3qg08nn1tv4qm.cloudfront.net/img/logo/logo-w.png"
+            alt=""
+          />
+        </div>
+        <h2>READ YOUR FAVOURITE NEWSPAPER ONLINE & ENJOY THESE FEATURES</h2>
+        <div id="gridNotes">
+          <div>
+            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/1.svg" alt="" />
+            <h4>NEWSPAPER REPLICA</h4>
+            <p>
+              Read an exact copy of Deccan Herald newspaper, anytime and
+              anywhere
+            </p>
+          </div>
+          <div>
+            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/6.svg" alt="" />
+            <h4>VIDEOS & PODCASTS</h4>
+            <p>
+              Watch videos/listen to podcasts to get more details than the
+              newspaper offers
+            </p>
+          </div>
+          <div>
+            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/2.svg" alt="" />
+            <h4>SEARCH</h4>
+            <p>You can search for news on the topic of your interest</p>
+          </div>
+          <div>
+            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/3.svg" alt="" />
+            <h4>MOST POPULAR</h4>
+            <p>
+              In one click, browse through most viewed, most downloaded or
+              shared news of the day
+            </p>
+          </div>
+          <div>
+            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/3.svg" alt="" />
+            <h4>LISTEN TO NEWS</h4>
+            <p>Give your eyes some rest and listen to news</p>
+          </div>
+          <div>
+            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/5.svg" alt="" />
+            <h4>ARCHIVE</h4>
+            <p>
+              Read yesterday’s newspaper or any older newspaper by just
+              selecting the date
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <h5>EXCLUSIVELY AVAILABEL HERE - DECCAN HERALD NATIONAL EDITION</h5>
+        <form id="form">
+          <!-- <label for="username">Username</label> -->
+          <input type="email" name="email" placeholder="Email ID" id="email" />
+
+          <!-- <label for="username">Password</label> -->
+          <input type="password" placeholder="Password" id="password" />
+
+          <input type="submit" value="Login" id="submit" />
+
+          <h4>If not signed up,Please</h4>
+          <a href="./signUp.html">Sign-up</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#form").addEventListener("submit", getData);
+  let userDataFromLS = JSON.parse(localStorage.getItem("userDataLS"));
+
+
+  function getData(){
+    event.preventDefault();
+    var loginMail = document.querySelector("#email").value;
+    var loginPass = document.querySelector("#password").value;
+    let f=0;
+    userDataFromLS.forEach(function(ele) {
+    if(ele.email==loginMail && ele.password==loginPass){
+      f++
+    }    
+  });
+  if(f==1){
+        alert("login Success")
+        window.location = "index.html";
+    }else if(f==0){
+        alert("Please enter correct email address or Paswword")
+        window.location.reload();
+    }
+  }
+
+
+</script>
