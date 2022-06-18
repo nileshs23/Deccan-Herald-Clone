@@ -1,0 +1,184 @@
+.container{
+    width: 100%;
+    margin-top:70px;
+    padding: 1% 5%;
+}
+.pagenav{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid rgb(201, 197, 197);
+    display: flex;
+    /* position: relative; */
+    margin-top: 30px;
+}
+.marginb{
+    margin-bottom: 15px;
+}
+.slogo{
+    /* position: absolute;
+    top: 2rem;
+    right:1rem; */
+    width: 20%;
+}
+.slogo img{
+    width: 30px;
+}
+.logo{
+    width: 40px;
+}
+.title{
+    margin:30px 0px;
+    display: flex;
+    align-items: center;
+}
+.title>p{
+    margin: 0px 15px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    padding:0px 20px;
+}
+.main{
+    width:63%;
+    margin-right: 5%;
+}
+.sidebar{
+    width:40%;
+    padding-top: 30px;
+}
+.sidebar>hr{
+    background-color: rgb(171, 161, 43);
+}
+.tc{
+    text-align: center;
+}
+.txt{
+    margin:40px 0px;
+    font-size:17px;
+    line-height: 25px;
+    font-weight: 400px;
+}
+.sidebar>.blu{
+    background-color: rgb(18, 130, 150);
+}
+.txt>p{
+ margin-bottom: 20px;
+}
+vedio{
+    width: 100%;
+}
+.imgs{
+    width:100%;
+    height: 240px;
+}
+.abs{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    padding: 10px;
+}
+body{
+    position: relative;
+}
+.sidelogo{
+    width: 50px;
+    padding:10px;
+    position: fixed;
+    top: 50%;
+    left:0rem;
+    border: 1px solid rgb(238, 237, 237);
+    
+}
+.sidelogo img{
+    width: 30px;
+}
+.list1>img{
+    width: 25%;
+    margin-right:10px;
+}
+.list1{
+    padding:10px 5px;
+}
+@media all and (max-width:1200px){
+    .content{
+        flex-direction: column;
+        padding:2px;
+    }
+    .slogo{
+        width: 40%;
+    }
+    .pagenav{
+        height:100%;
+    }
+    .sidelogo{
+        display:none;
+    }
+    .fs36{
+        font-size: 30px;
+    }
+    .marginb{
+        margin-bottom:10px;
+    }
+    .main{
+        width:90%;
+        margin:auto;
+    }
+    .sidebar{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        grid-template-areas: 
+        "a b"
+        "c d"
+        ;
+    }
+}
+@media all and (max-width:768px){
+    .fs36{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .slogo{
+        margin: 10px 0px;
+        width: 50%;
+    }
+    .content{
+        flex-direction: column;
+        margin:2px;
+    }
+    .pagenav{
+        flex-direction: column;
+    }
+    .main{
+        width:100%;
+    }
+    .c{
+        display: none;
+    }
+    vedio{
+        width: 100px;
+        height: 100px;
+    }
+    .imgs{
+        width:100%;
+        height: 240px;
+    }
+    .sidebar{
+        width: 100%;
+        margin-right: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        grid-template-areas: 
+        "a"
+        "b"
+        ;
+    }
+}
