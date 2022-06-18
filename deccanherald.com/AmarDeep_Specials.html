@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIALS</title>
+    <link rel="stylesheet" href="AmarDeep_Navbar.css" />
+    <link rel="stylesheet" href="AmarDeep_SpecialPage.css" />
+    <link rel="stylesheet" href="AmarDeep_Bottom.css" />
+    <style>
+        body a{
+            text-decoration:none;
+            color: white;
+        }
+        h1{
+            font-family: sans-serif;
+        }
+        h3{
+            font-family: sans-serif;
+        }
+        p{
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        a{
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- +++++++++++++++++++***NAVBAR START***+++++++++++++++++++ -->
+    <div>
+    <!-- NAVBAR TOP -->
+        <a id="logo" href="https://www.deccanherald.com/"><img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/logo/d-logo-new.svg" alt="DeccanHerald"></a>
+        <div>
+            <div>
+                <p>THURSDAY 16 JUN 2022</p>
+                <p>UPDATED: 2:35 PM IST</p>
+                <a href="https://epaper.deccanherald.com/">E-PAPER</a>
+                <a href="http://dhclassified.com/">CLASSIFIEDS</a>
+            </div>
+            <div>
+                <img id="weather" src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/weather/03d.svg" alt="wethter">
+                <p>BLR 30° C Clouds</p>
+                <p>Sensex:51515.68 -1025.71</p>
+                <img class="arrow" src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/down-arrow.svg" alt="arrow" />
+                <p>Nifty: 15377.35 -314.8</p>
+                <img class="arrow" src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/down-arrow.svg" alt="arrow" />
+                <a href="https://www.facebook.com/deccanherald"><img id="facebook" src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/fb-nav.svg" alt="facebook" /></a>
+                <a href="https://twitter.com/deccanherald"><img id="twitter" src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/twitter-nav.svg" alt="twitter" /></a>
+                <a href="https://www.instagram.com/deccanherald/"><img id="insta" src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/ig-nav.svg" alt="insta" /></a>
+            </div>
+        </div>
+    </div>
+    <!-- NAVBAR MIDDLE -->
+    <div>
+        <div id="mlines">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="bengaluru.html">Bangluru</a>
+            <a href="karnataka.html">Karnataka</a>
+            <a href="National.html">National</a>
+            <a href="sports.html">Sports</a>
+            <a href="Business.html">Business</a>
+            <a href="Opinion.html">Opinion</a>
+            <a href="features.html">Features</a>
+            <a href="videos.html">Videos</a>
+            <a href="AmarDeep_Specials.html">Specials</a>
+            <a href="AmarDeep_BrandSpot.html">Brandspot</a>
+            <div>
+                <p>NEW</p>
+                <p>Newsletters</p>
+            </div>
+        </div>
+        <div><img id="search" src="data:image/png;base64,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" alt=""></div>
+    </div>
+    <!-- NAVBAR LAST -->
+    <div>
+        <div>
+            <p>IN BRIEF:</p>
+            <!-- <div> -->
+                <a href="https://www.deccanherald.com/national/east-and-northeast/new-thick-thumbed-bat-species-discovered-in-bamboo-forest-in-meghalaya-1118632.html">New bat species in Meghalya</a>
+                <a href="https://www.deccanherald.com/business/business-news/how-do-interest-rates-affect-the-real-economy-1118541.html">Interest rates & real economy</a>
+                <a href="https://www.deccanherald.com/international/world-news-politics/watergate-the-president-toppling-scandal-triggered-by-a-piece-of-tape-1118571.html">A President-toppling scandal</a>
+                <a href="https://www.deccanherald.com/national/north-and-central/woman-files-fir-against-runaway-lover-for-not-honouring-suicide-pact-1118403.html">A suicide twist</a>
+                <a href="https://www.deccanherald.com/opinion/in-perspective/bengaluru-s-concrete-problem-1118483.html">Bangluru's Concrete problem</a>
+                <a href="https://www.deccanherald.com/opinion/first-edit/we-must-be-ready-for-a-covid-surge-1118484.html">Are we ready for covid surge?</a>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- +++++++++++++++++++***NAVBAR END***+++++++++++++++++++ -->
+
+    <!-- +++++++++++++++++++***PAGE START***+++++++++++++++++++ -->
+    <div id="page"> <!-- div - 4th child -->
+        <!-- PAGE -->
+        <div>
+            <p>Home</p>
+            <p>/ Special Page</p>
+        </div>
+        <div>
+            <h1>Specials</h1>
+            <p>INSIGHT</p>
+            <p>POINT BLANK</p>
+            <p>SUNDAY SPOTLIGHT</p>
+        </div>
+        <div class="greyline"></div>
+        <div class="smallorange"></div>
+        <div class="ns">
+            <h3>INSIGHT</h3>
+            <a href="https://www.deccanherald.com/insight">VIEW ALL</a>
+        </div>
+        <div class="attri">
+            <div>
+                <div>
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/12/862803-01-02-1-1117394-1654976995.jpg?itok=-OkZj6Zw" alt="">
+                    <div>
+                        <h1>Sagarmala project well underway in Gujrat</h1>
+                        <p>12th Jun 2022</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/12/file7le0fd8mb5tzlb4g36f-1117395-1654971841-1-1117395-1654977111.jpg?itok=2N9f3QeW" alt="">
+                        <a href="https://www.deccanherald.com/specials/insight/sagarmala-project-do-we-really-need-more-ports-1117395.html">Sagarmala Priject: Do we relly need more ports?...</a>
+                        <p>12th Jun 2022</p>
+                    </div>
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/05/file7ij59x8uf6pw13k08xe-1115280-1654365601-1-1115280-1654401698.jpg?itok=OGAlRWRi" alt="">
+                        <a href="https://www.deccanherald.com/specials/insight/maharashtra-village-stops-dumping-of-fly-ash-konkan-village-saves-mangroves-1115280.html">Maharashtra villages that took step to save environment...</a>
+                        <p>5th Jun 2022</p>
+                    </div>
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/05/29/fire-dh-14-1113402-1653766961.jpg?itok=awprJ2Sg" alt="">
+                        <a href="https://www.deccanherald.com/specials/insight/fire-accidents-a-burning-problem-despite-reforms-1113402.html">Fire accidents, a burning problem despite reforms</a>
+                        <p>29th May 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/05/22/file7kz3ewp3atc1joaf8cuc-1111393-1653191788.jpg?itok=d_HRODIo" alt="">
+                <a href="https://www.deccanherald.com/specials/insight/it-is-still-a-treacherous-road-back-to-kashmir-1111393.html">It is still a treacherous road back to Kashmir...</a>
+                <p>22nd May 2022</p>
+            </div>
+        </div>
+        <div class="smallorange"></div>
+        <div class="ns">
+            <h3>POINT BLANK</h3>
+            <a href="https://www.deccanherald.com/insight">VIEW ALL</a>
+        </div>
+        <div class="attri">
+            <div>
+                <div>
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/11/file7ilv117re00w2zskawu-1117079-1654878902-1-1117079-1654898635.jpg?itok=whYmJ_QS" alt="">
+                    <div>
+                        <h1>Congestion at KSR station irks commuters</h1>
+                        <p>11th Jun 2022</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/11/file7lbjrt5p8znc76y11s4-1117078-1654878841-1-1117078-1654898284.jpg?itok=dme9WNWR" alt="">
+                        <a href="https://www.deccanherald.com/specials/point-blank/rail-terminal-boost-access-now-1117078.html">Rail terminal: Boost access, now</a>
+                        <p>11th Jun 2022</p>
+                    </div>
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/04/rains-pti-1115052-1654309822.png?itok=Od8mFw48" alt="">
+                        <a href="https://www.deccanherald.com/specials/point-blank/with-bengaluru-monsoon-approaching-predict-floods-but-design-to-drain-1115052.html">Bengaluru monsoon: Predict floods, but design to drain...</a>
+                        <p>4th Jun 2022</p>
+                    </div>
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/05/28/bng21-spray-skd-031-1113099-1653682445.jpg?itok=GwwIJvge" alt="">
+                        <a href="https://www.deccanherald.com/city/beyond-pandemic-vigil-on-non-communicable-diseases-should-not-stop-1113099.html">'Vigil on non-communicable-diseases should not stop'...</a>
+                        <p>28th May 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div id="blankside">
+                <a href="https://www.deccanherald.com/specials/point-blank/vector-borne-health-worries-as-rains-drench-bengaluru-1113098.html">Vector-borne health worries as rains drench Bengaluru...</a>
+                <p>28th May 2022</p>
+            </div>
+        </div>
+        <div class="smallorange"></div>
+        <div class="ns">
+            <h3>SUNDAY SPOTLIGHT</h3>
+            <a href="https://www.deccanherald.com/insight">VIEW ALL</a>
+        </div>
+        <div class="attri">
+            <div>
+                <div>
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/12/file7lbe7vynex2xsqejkju-1117400-1654972921-1-1117400-1655013957.jpg?itok=a4DzW5LH" alt="">
+                    <div>
+                        <h1>Country's borders need healing, not conflict</h1>
+                        <p>12th Jun 2022</p>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div id="sundayside">
+                <div>
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/11/2022-06-10t152232z463606177rc23pu9aslq7rtrmadp3india-politics-diplomacy-pakistanjpg-1117165-1654916485.jpg?itok=4tAwh37B" alt="">
+                    <a href="https://www.deccanherald.com/specials/india-a-vilified-vishwaguru-1117165.html">India: A vilified 'Vishwaguru'</a>
+                </div>
+                <div>
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/04/bng27-rooftop-solar-energy-13jpg-1108720-1652387738-1115200-1654321465.jpg?itok=CKLDpmNQ" alt="">
+                    <a href="https://www.deccanherald.com/specials/international-solar-alliance-making-solar-power-a-political-priority-for-nations-1115200.html">ISA: Making solar power political priority for nations...</a>
+                </div>
+                <div>
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/05/28/police-istock-4-1111705-1653299705-1113160-1653725652.jpg?itok=1LfQXvcf" alt="">
+                    <a href="https://www.deccanherald.com/national/south/hyderabad-encounter-killings-we-want-probe-by-cbi-or-nia-1113160.html">hyderabad encounter killings: 'Want CBI or NIA probe'...</a>
+                </div>
+            </div>
+        </div>
+        <div id="lastgrey" class="greyline"></div>
+    </div>
+    <!-- +++++++++++++++++++***PAGE END***+++++++++++++++++++ -->
+
+    <!-- +++++++++++++++++++***BOTTOM START***+++++++++++++++++++ -->
+    <div> <!-- div - 5th child -->
+        <!-- Bottom Top -->
+        <div>
+            <div id="coloredfst">
+                <div id="links">
+                    <div>
+                        <a href="https://www.deccanherald.com/nation">NATIONAL</a>
+                        <div>_______________</div>
+                        <a href="https://www.deccanherald.com/nation/national-politics">Politics</a>
+                        <a href="https://www.deccanherald.com/nation/north-central">North and Central</a>
+                        <a href="https://www.deccanherald.com/south">South</a>
+                        <a href="https://www.deccanherald.com/nation/east-and-northeast">East and Northeast</a>
+                        <a href="https://www.deccanherald.com/nation/west">West</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/karnataka">KARNATAKA</a>
+                        <p>____________</p>
+                        <a href="https://www.deccanherald.com/state/top-karnataka-stories-sec">Top Stories</a>
+                        <a href="https://www.deccanherald.com/state/politics-sec">Politics</a>
+                        <a href="https://www.deccanherald.com/state/districts-sec">Districts</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/bengaluru">BENGALURU</a>
+                        <p>______________</p>
+                        <a href="https://www.deccanherald.com/bengaluru/top-bengaluru-stories">Top Stories</a>
+                        <a href="https://www.deccanherald.com/bengaluru/crime">Bengaluru Crime</a>
+                        <a href="https://www.deccanherald.com/bengaluru/politics">Politics</a>
+                        <a href="https://www.deccanherald.com/bengaluru/infrastructure">Infrastructure</a>
+                        <a href="https://www.deccanherald.com/bengaluru/life-in-the-city">Life in the City</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/sports">SPORTS</a>
+                        <p>________________</p>
+                        <a href="https://www.deccanherald.com/sports/cricket">Cricket</a>
+                        <a href="https://www.deccanherald.com/sports/formula-1">Formula 1 with DH</a>
+                        <a href="https://www.deccanherald.com/sports/football">Football</a>
+                        <a href="https://www.deccanherald.com/sports/tennis">Tennis</a>
+                        <a href="https://www.deccanherald.com/sports/sportscene">Sportscene</a>
+                        <a href="https://www.deccanherald.com/sports/other-sports">Other Sports</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/business">BUSINESS</a>
+                        <p>_____________</p>
+                        <a href="https://www.deccanherald.com/business-sec">Business News</a>
+                        <a href="https://www.deccanherald.com/family-finance">Family Finance</a>
+                        <a href="https://www.deccanherald.com/technology">Technology</a>
+                        <a href="https://www.deccanherald.com/dh-wheels">DH Wheels</a>
+                    </div>
+                    <div>
+                        <a>MULTIMEDIA</a>
+                        <p>_____________</p>
+                        <a href="https://www.deccanherald.com/video">Videos</a>
+                        <a href="https://www.deccanherald.com/photos">Photos</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/opinion-0">OPINION</a>
+                        <p>________________</p>
+                        <a href="https://www.deccanherald.com/Opinion">DH Views</a>
+                        <a href="https://www.deccanherald.com/first-edit">Editorials</a>
+                        <a href="https://www.deccanherald.com/panorama">Panorama</a>
+                        <a href="https://www.deccanherald.com/main-article">Comment</a>
+                        <a href="https://www.deccanherald.com/in-perspective">In Prespective</a>
+                        <a href="https://www.deccanherald.com/right-in-the-middle">Right in the Middle</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/entertainment">ENTERTAINMENT</a>
+                        <p>__________________</p>
+                        <a href="https://www.deccanherald.com/entertainment-cat">Entertainment News</a>
+                        <a href="https://www.deccanherald.com/tag/showtime">DH Showtime</a>
+                        <a href="https://www.deccanherald.com/DH-Talkies">DH Talkies</a>
+                        <a href="https://www.deccanherald.com/arts-books-culture">Arts, Books & Culture</a>
+                    </div>
+                </div>
+                <div id="extra">
+                    <div>
+                        <a href="https://www.deccanherald.com/national/east-and-northeast/trains-set-ablaze-in-bihar-amid-protests-over-agnipath-scheme-bjp-mla-injured-1118604.html">BIHAR BECOMES 'AGNIPATH'</a>
+                        <a href="https://www.deccanherald.com/business/us-fed-hikes-interest-rate-by-075-points-biggest-since-1994-1118503.html">US FED'S BIGGEST INTEREST RATE HIKW SINCE 1994</a>
+                        <a href="https://www.deccanherald.com/national/national-politics/after-sharad-pawar-declines-oppn-considering-gopalkrishna-gandhi-farooq-abdullah-for-presidential-polls-1118415.html">OPPN HUNTS FOR PRESIDENTIAL CANDIDATE</a>
+                        <a href="https://www.deccanherald.com/national/on-oppns-fire-trail-centre-announces-career-options-for-agniveers-1118545.html">CENTRE TRIES TO DOUSE AGNIVEER FIRE</a>
+                    </div>
+                    <div>
+                        <a href="https://www.deccanherald.com/opinion/panorama/coal-back-in-focus-as-scorching-summer-spikes-energy-demand-1118450.html">COAL BACK IN FOCUS</a>
+                        <a href="https://www.deccanherald.com/gallery-categories/dh-galleries">DH PHOTO GALLERIES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Middle -->
+        <div id="colorsec">
+            <div>
+                <div>
+                    <p>DH PICKS</p>
+                    <div class="line"></div>
+                    <!-- <p>_______________________________________</p> -->
+                    <a href="https://www.deccanherald.com/national/agnipath-keeps-bihar-up-burning-as-more-trains-set-afire-1118876.html">Agnipath: Bihar sees burning trains, attack on BJP MLA</a>
+                    <a href="https://www.deccanherald.com/national/centre-increases-upper-age-limit-to-23-for-recruitment-under-agnipath-scheme-1118816.html">Political significance of UP's bulldozer demolitions</a>
+                    <a href="https://www.deccanherald.com/opinion/first-edit/is-cic-now-an-office-of-conspiracy-theories-1118786.html">Who's got it right on EVs: Musk or Buffett?</a>
+                    <a href="https://www.deccanherald.com/national/indonesian-foreign-minister-retno-marsudi-stresses-on-tolerance-during-visit-to-india-1118765.html">Fed-triggered recession in US may cost Biden a 2nd term</a>
+                    <a href="https://www.deccanherald.com/state/top-karnataka-stories/women-as-aphrodisiac-rguhs-essay-topic-faces-flak-1118742.html">Tax ruling emboldens states against Modi's goverment</a>
+                </div>
+                <div>
+                    <p>LATEST STORIES</p>
+                    <div class="line"></div>
+                    <!-- <p>_______________________________________</p> -->
+                    <a href="https://www.deccanherald.com/business/business-news/gold-prices-fall-set-for-biggest-weekly-drop-in-a-month-1118883.html">'By 2030, 30% of all vehicles sold in India to be EVs'</a>
+                    <a href="https://www.deccanherald.com/business/business-news/sensex-falls-over-400-points-nifty-below-15300-in-early-trade-1118882.html">Pak trying to 'bleed India with thousand cuts': Rajnath</a>
+                    <a href="https://www.deccanherald.com/business/business-news/rupee-gains-6-paise-to-7804-against-us-dollar-in-early-trade-1118881.html">Even govt lands have been grabbed by fraudters: Goa CM</a>
+                    <a href="https://www.deccanherald.com/national/12847-fresh-covid-19-cases-in-india-active-caseload-crosses-60000-mark-1118880.html">Two unidentified militants killed in encounter in J&K</a>
+                    <a href="https://www.deccanherald.com/national/ed-searches-under-way-in-10-places-in-delhi-in-case-against-satyendar-jain-1118879.html">2022-23 gold bonds to open for subscription on Jun 20</a>
+                </div>
+                <div>
+                    <p>TERNDING NEWS</p>
+                    <div class="line"></div>
+                    <!-- <p>_______________________________________</p> -->
+                    <a href="https://www.deccanherald.com/city/top-bengaluru-stories/inspired-by-tirumala-iskcon-builds-a-new-temple-in-bengaluru-1118228.html">People gather in support of Nupur Sharma in Ahmedabad</a>
+                    <a href="https://www.deccanherald.com/national/prophet-row-scores-of-people-assemble-in-support-of-nupur-sharma-in-ahmedabad-1117243.html">Inspired by Tirumala, Iskcon builds templte in Bengaluru</a>
+                    <a href="https://www.deccanherald.com/state/top-karnataka-stories/supa-dam-goes-dry-opens-floodgates-of-memories-for-residents-1117630.html">Supa Dam goes dry, opens floodgates of memories</a>
+                    <a href="https://www.deccanherald.com/national/national-politics/ed-row-congress-protest-turns-violent-in-hyderabad-renuka-chowdhury-grabs-cops-collar-1118697.html">31 students at 2 Bengaluru schools test Covid positive</a>
+                </div>
+            </div>
+            <div></div>
+            <div>
+                <div>
+                    <p>DOWNLOAD DH APP</p>
+                    <div class="lineS"></div>
+                    <div id="apps">
+                        <img src="https://www.deccanherald.com/sites/deccanherald.com/modules/dynamicfooter/images/android.svg" alt="android">
+                        <img src="https://www.deccanherald.com/sites/deccanherald.com/modules/dynamicfooter/images/ios.svg" alt="apple">
+                    </div>
+                </div>
+                <div>
+                    <p>SERVICES</p>
+                    <div class="lineS"></div>
+                    <div>
+                        <a href="http://printersmysore.com/">About</a>
+                        <a href="https://epaper.deccanherald.com/">Epaper</a>
+                        <a href="https://www.deccanherald.com/archives">Archives</a>
+                        <a href="https://www.deccanherald.com/sitemap">Sitemap</a>
+                        <a href="https://dhclassifieds.com/deccanonline/">Classifieds</a>
+                        <a href="http://printersmysore.com/contact">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <p>OUR GROUP SITES</p>
+                    <div class="lineS"></div>
+                    <div>
+                        <a href="http://printersmysore.com/">Printers Mysore</a>
+                        <a href="http://www.prajavani.net/">Prajavani</a>
+                        <a href="http://sudhaezine.com/">Sudha</a>
+                        <a href="http://mayuraezine.com/">Mayura</a>
+                        <a href="https://www.exammastermind.com/">Exam Mastermind</a>
+                    </div>
+                </div>
+                <div id="needs">
+                    <div>
+                        <a href="https://www.deccanherald.com/privacy-policy">Privacy Policy</a>
+                        <a href="https://www.deccanherald.com/terms">Terms</a>
+                        <a href="https://www.deccanherald.com/disclaimer">Disclaimer</a>
+                        <a href="https://www.deccanherald.com/grievance-redressal">Grievance Redressal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom End -->
+        <div>
+            <div>
+                <p>© 2022 The Printers (Mysore) Private Ltd.</p>
+                <div id="more">
+                    <a href="https://www.facebook.com/deccanherald/"><img src="https://www.deccanherald.com/sites/deccanherald.com/modules/dynamicfooter/images/fb-white.svg" alt="facebook"></a>
+                    <a href="https://twitter.com/deccanherald"><img src="https://www.deccanherald.com/sites/deccanherald.com/modules/dynamicfooter/images/twit-white.svg" alt="twitter"></a>
+                    <a href="https://www.instagram.com/deccanherald/"><img src="https://www.deccanherald.com/sites/deccanherald.com/modules/dynamicfooter/images/insta-white.svg" alt="insta"></a>
+                    <a id="yt" href="https://www.youtube.com/channel/UCHDXXHPrz-1GVbK_qk82hBQ"><img src="https://www.deccanherald.com/sites/deccanherald.com/modules/dynamicfooter/images/youtube-white.svg" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- +++++++++++++++++++***BOTTOM END***+++++++++++++++++++ -->
+    
+</body>
+</html>
