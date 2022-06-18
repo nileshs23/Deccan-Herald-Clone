@@ -229,12 +229,16 @@ nav.sticky{
     }
     .mynav{
         padding:0;
+        margin-top: -70px;
     }
     .ss .toggle{
         top:20px;
         right:20px;
     }
     .navdate{
+        display: none;
+    }
+    .toplogo{
         display: none;
     }
 }
