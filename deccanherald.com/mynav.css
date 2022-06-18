@@ -1,0 +1,241 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* .abs{
+
+    position: relative;
+} */
+.slide{
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color:#0087A8;
+    padding-top: 60px;
+    transform:translateX(-180px)
+}
+/* .slide h1{
+    color:white;
+    font-weight: 700;
+    padding:10px 40px;
+    padding-right: 30px;
+    pointer-events: none;
+} */
+.slide ul>li{
+    list-style: none;
+}
+.slide ul li a{
+    color: white;
+    font-weight: 400;
+    padding: 10px 20px;
+    display: block;
+    text-transform:capitalize;
+    text-decoration:none;
+    transition: 0.2s ease-out;
+}
+.slide ul li a:hover{
+ background-color:#19c5f0  ;
+}
+.ss input{
+    display: none;
+    visibility:hidden;
+    -webkit-appearance: none;
+}
+.ss{
+    position: absolute;
+}
+.ss .toggle{
+    position: absolute;
+    height:30px;
+    width:30px;
+    top:10px;
+    left: 15px;
+    z-index: 1;
+    cursor:pointer;
+    border-radius: 2px;
+    background-color: #0087A8;
+    text-align: end;
+    border-right: 1px solid rgba(201, 201, 201,0.7);
+}
+.ss .toggle .common{
+    position:absolute;
+    height: 2px;
+    background-color: white;    
+    border-radius:50px;
+    transition: 0.3s ease;
+}
+.ss .toggle .top_line{
+    width: 10px;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.ss .toggle .middle_line{
+    width: 15px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.ss .toggle .bottom_line{
+    width: 20px;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.ss input:checked ~ .toggle .top_line{
+    left:2px;
+    top:14px;
+    width:25px;
+    transform:rotate(45deg);
+}
+.ss input:checked ~ .toggle .middle_line{
+    left:2px;
+    top:14px;
+    width:25px;
+    transform:rotate(-45deg);
+}
+.ss input:checked ~ .toggle .bottom_line{
+    opacity: 0;
+    transform:translateX(20px)
+}
+.ss input:checked ~ .slide{
+    transform:translateX(0);
+   position: fixed;
+}
+
+/* css for header */
+nav{
+    width:100%;
+    padding: 10px 0;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    background-color: #0087A8;
+    
+}
+nav .innerp{
+    width:93%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600px;
+    padding:4px;
+}
+nav a:hover{
+    background-color: #25768a;
+    text-decoration: none;
+}
+.navlogo>img{
+    width: 120px;
+    margin:10px 6px;
+}
+.navlogo{
+    width:20%
+}
+nav{
+    width:100%;
+    margin-top:10px;
+}
+.fle>ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 5px;
+    color:#fff;
+}
+.fle{
+    width:88%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav.sticky{
+    position: fixed;
+    top:0px;
+    left:0;
+    z-index: 1;
+    background-color:#0087A8;
+    margin-top:-10px;
+    transition: 0.2s ease-in-out;
+  
+}
+.ss{
+    width: 7%;
+    height: 100%;
+}
+.toplogo{
+    margin:1% 15%;
+    width:120px
+}
+.navdate{
+    width:100%;
+    display:flex;
+    margin-bottom: -12px;
+}
+.fll{
+    width:25%;
+    margin-left:20%;
+    display: flex;
+    justify-content: space-between;
+}
+.imgs{
+    width:80px;
+    margin-bottom:5px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fld{
+    width:35%;
+    margin-left:10%;
+    display: flex;
+    justify-content: space-between;
+}
+.fld img{
+    width:20px;
+}
+.gr{
+    font-size: 11px;
+    font-weight: 400;
+    color:#333333;
+}
+.fd{
+    font-size: 11px;
+    font-weight: 700;
+    color:#333333;
+}
+.red{
+    color:red
+}
+@media all and (max-width:1200px){
+    .fle{
+        display: none;
+    }
+    .navlogo{
+        width: 70%;
+        margin:auto
+    }
+    .navlogo>img{
+        width:200px;
+        margin-top:20px;
+    }
+    .mynav{
+        padding:0;
+    }
+    .ss .toggle{
+        top:20px;
+        right:20px;
+    }
+    .navdate{
+        display: none;
+    }
+}
+
