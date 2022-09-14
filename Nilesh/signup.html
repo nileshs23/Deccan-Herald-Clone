@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        #main{
+            width:100%;
+            margin:0px;
+            display: flex;
+
+
+        }
+        #first{
+            width:50%;
+            height:auto;
+            /* border:1px solid red; */
+            background-color: #0087a8;
+        }
+        #first>img:nth-child(1){
+            width:100px;
+            margin:auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    
+        }
+        #first>img:nth-child(2){
+            width:100px;
+        }
+        /* #f{
+            width:50px;
+            margin:auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        #f{
+          width:10%;
+            
+        }
+        #s{
+          width:10%;
+        }
+        #t{
+          width:10%;
+        }
+        h2{
+            color:white;
+            text-align:center ;
+            font-size:30px;
+            font-style: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,auto);
+            gap:10px 10px;
+            align-content: center;
+        }
+        #grid>div>h1{
+            color:white;
+            font-size:medium;
+        }
+        #grid>div>p{
+            color:white;
+            font-size:19px;
+        }
+        #grid>div>img{
+            width:80px;
+            height: 50px;
+        }
+        h4{
+            color:#f7b825;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        #second{
+            width:50%;
+            /* border:1px solid red; */
+            
+        }
+        #second>div{
+            margin:auto;
+            /* display: flex; */
+            justify-content: start;
+            align-items: flex-start;
+
+        }
+        #secfir>div{
+            background-color: #9715ed;
+            padding:1px;
+            margin-top: 10px;
+            margin-left:8%;
+            width:85%;
+            text-align: center;
+            border-radius: 10px;
+            /* border-top-right-radius:10px ; */
+            
+        }
+        #secfir>div>:nth-child(1)>h4{
+            color:white ;
+            font-size: 18px;
+        }
+        #second>div:nth-child(2){
+            width:90%;
+            /* display: flex; */
+            justify-content:flex-start;
+            padding-inline-start: 30px;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border-radius: 10px;
+        }
+        
+        #second>div:nth-child(2)>h4{
+            color:black;
+            margin:50px;
+            
+        }
+       #log>div:nth-child(1){
+            width:80%;
+            border: 1px solid grey;
+            padding:15px;
+            color: gray;
+            font-size: x-large;
+            border-radius: 10px;
+
+       }
+       #log>div:nth-child(2){
+            width:80%;
+            border: 1px solid grey;
+            padding:15px;
+            margin-top: 10px;
+            color: gray;
+            font-size: x-large;
+            border-radius: 10px;
+
+
+       }
+       button{
+            width:80%;
+            border: 1px solid grey;
+            padding:15px;
+            margin-top: 20px;
+            font-size: x-large;
+            background-color: #0087a8;
+            border-radius: 25px;
+            color:white;
+            margin-left: 15px;
+            margin-bottom: 30px;
+       }
+       .checks{
+        
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer ;
+        size:30px;
+        margin-top:20px;
+       }
+       a{
+        text-decoration: none;
+        font-size: large;
+       }
+       .para{
+        font-size: 20px;
+        text-align:center;
+        color:grey;
+        margin-top: -5px;
+       }
+       .title{
+        color: white;
+        font-size: medium;
+       }
+       .ad{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+       
+      
+
+            </style>
+</head>
+<body>
+    <div id="main">
+        <div id="first">
+            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/logo/logo-w.png" alt="logo">
+            <div id="imgg">
+                <img id="f" src="https://d2htg7kv1jcs0m.cloudfront.net/DH/2022/06/16/BC/5_01/dcfe3542_01_mr.jpg" alt="">
+                <img id="s" src="https://d2htg7kv1jcs0m.cloudfront.net/DH/2022/06/16/BC/5_01/dcfe3542_01_mr.jpg" alt="">
+                <img id="t" src="https://d2htg7kv1jcs0m.cloudfront.net/DH/2022/06/16/BC/5_01/dcfe3542_01_mr.jpg" alt="">
+            </div>
+            
+            <h2>READ YOUR FAVOURITE NEWSPAPER ONLINE & ENJOY THESE FEATURES</h2>
+            <div id="grid">
+                <div >
+                   <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/1.svg" alt="">
+                   <h1>NEWSPAPER REPLICA</h1>
+                   <p>Read an exact copy of Deccan Herald newspaper, anytime and anywhere</p>
+                </div>
+                <div >
+                    <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/6.svg" alt="">
+                    <h1>VIDEOS & PODCASTS</h1>
+                    <p>Watch videos/listen to podcasts to get more details than the newspaper</p>
+                 </div>
+                 <div >
+                    <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/4.svg" alt="">
+                    <h1>SEARCH</h1>
+                    <p>You can search for news on the topic of your interest</p>
+                 </div>
+                 <div >
+                     <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/2.svg" alt="">
+                     <h1>MOST POPULAR</h1>
+                     <p>In one click, browse through most viewed, most downloaded or shared news of the day</p>
+                  </div>
+                  <div >
+                    <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/3.svg" alt="">
+                    <h1>LISTEN TO NEWS</h1>
+                    <p>Give your eyes some rest and listen to news</p>
+                 </div>
+                 <div >
+                     <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/5.svg" alt="">
+                     <h1>ARCHIEVE</h1>
+                     <p>Read yesterday's newspaper or any older newspaper by just selecting the date</p>
+                  </div>
+            </div>
+            <h4>Terms and Conditions | FAQs</h4>
+        </div>
+        <div id="second">
+             <div id="secfir">
+                <div>
+                    <h4 class="title">EXCLUSIVELY AVAILABLE HERE-DECCAN HERALD NATIONAL EDITION</h4>
+                </div>
+               
+             </div>
+             <div>
+                <h4>LOGIN</h4>
+                <!-- <h4>SUBSCRIBE TO PLAN</h4> -->
+                <div id="log">
+                    <div>Email ID</div>
+                    <div>Password</div>
+                    <input class="checks" type="checkbox" id="chec" >
+                    <div class="checks"></div>
+                    Remember me
+                    <div>
+                        
+                        <button>LOGIN</button>
+                    </div>
+                     <a href="">Forgot password?</a>
+                     <p class="para">or Login Using</p>
+                     <div class="ad">
+                        <div>
+                            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/fbnew.png" alt="">
+                        </div>
+                        <div>
+                            <img src="https://d3qg08nn1tv4qm.cloudfront.net/img/googlenew.png" alt="">
+                        </div>
+                     </div>
+                    
+                </div>
+              </div>
+            
+              
+                
+             
+                
+                
+             <div></div>
+
+        </div>
+    </div>
+</body>
+</html>
