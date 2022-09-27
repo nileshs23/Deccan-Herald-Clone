@@ -86,14 +86,17 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
- npm install
-  ```
-* Node Js
-```sh
-https://nodejs.org/en/download/
-```
+  * Node Js
+
+ ```sh
+   https://nodejs.org/en/download/
+   ```
+  
+   * NPM
+
+ ```sh
+   npm install -g npm
+   ```
 
 ### Installation
 
@@ -129,7 +132,7 @@ Use this to get insights of signup and login functionality.
 - [x] Added Home Page
 - [x] Added back to top links
 - [x] Added Additional Designs.
-- [x] Added "signip" function to easily get personal recomendations.
+- [x] Added "signUp" function to easily get personal recomendations.
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
