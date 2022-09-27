@@ -15,7 +15,7 @@
   <p align="center">
    Indian English E- Newspaper !
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nileshs23/Deccan-Herald-Clone"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     .
